@@ -177,8 +177,6 @@ public class Hangman {
                 terminal.putCharacter(c);
                 wrongLetterX++;
                 wrongLetterY++;
-
-
                 drawMan(terminal, errorCounter);
                 errorCounter++;
 
@@ -213,29 +211,43 @@ public class Hangman {
                 break;
 
             case 2:
-                terminal.setCursorPosition(47, 11);
+                terminal.setCursorPosition(47, 10);
+                terminal.putCharacter('_');
+                terminal.setCursorPosition(48, 11);
                 terminal.putCharacter('\\');
-                terminal.setCursorPosition( 48, 12);
+                terminal.setCursorPosition(49, 12);
                 terminal.putCharacter('\\');
                 terminal.flush();
                 break;
 
             case 3:
-                terminal.setCursorPosition(46, 10);
+                terminal.setCursorPosition(47, 10);
                 terminal.putCharacter('|');
-                terminal.setCursorPosition( 46, 9);
+                terminal.setCursorPosition(47, 9);
                 terminal.putCharacter('|');
-                terminal.setCursorPosition( 46, 8);
+                terminal.setCursorPosition(47, 8);
                 terminal.putCharacter('|');
                 terminal.flush();
                 break;
 
             case 4:
-
+                terminal.setCursorPosition(47, 7);
+                terminal.putCharacter('=');
+                terminal.setCursorPosition(48, 7);
+                terminal.putCharacter('=');
+                terminal.setCursorPosition(49, 7);
+                terminal.putCharacter('=');
+                terminal.setCursorPosition(50, 7);
+                terminal.putCharacter('=');
+                terminal.setCursorPosition(51, 7);
+                terminal.putCharacter('=');
+                terminal.flush();
                 break;
 
             case 5:
-
+                terminal.setCursorPosition(48, 8);
+                terminal.putCharacter('/');
+                terminal.flush();
                 break;
 
             case 6:
