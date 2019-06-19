@@ -84,7 +84,6 @@ import com.googlecode.lanterna.input.KeyType;
 import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
 import com.googlecode.lanterna.terminal.Terminal;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class Hangman {
@@ -96,7 +95,6 @@ public class Hangman {
     public static void main(String[] args) throws Exception {
         DefaultTerminalFactory terminalFactory = new DefaultTerminalFactory();
         Terminal terminal;
-
         terminal = terminalFactory.createTerminal();
         terminal.setCursorVisible(false);
 
@@ -123,10 +121,13 @@ public class Hangman {
         words.add("tiger");
         words.add("lion");
 
+        drawMan draw = new drawMan();
+
         // Variables for the positioning of the wrong guesses.
         int wrongLetterX = 25;
         int wrongLetterY = 25;
         int errorCounter = 1;
+        int rightCounter = 1;
 
         // Get out a random word from the arraylist.
         int randomPos = (int) (Math.random() * words.size());
@@ -165,20 +166,49 @@ public class Hangman {
                     terminal.setCursorPosition(j + 14, 14);
                     terminal.putCharacter(c);
                     terminal.flush();
-                    break;
-                }
+                 }
             }
 
             if (isRight) {
-                System.out.println("Right");
+                rightCounter++;
+
+                if (rightCounter == listedWord.length) {
+                    terminal.setCursorPosition(47, 14);
+                    terminal.putCharacter('W');
+                    terminal.setCursorPosition(48, 14);
+                    terminal.putCharacter('I');
+                    terminal.setCursorPosition(49, 14);
+                    terminal.putCharacter('N');
+                    terminal.setCursorPosition(50, 14);
+                    terminal.putCharacter('N');
+                    terminal.setCursorPosition(51, 14);
+                    terminal.putCharacter('E');
+                    terminal.setCursorPosition(52, 14);
+                    terminal.putCharacter('R');
+                    terminal.setCursorPosition(53, 14);
+                    terminal.putCharacter('!');
+                }
             } else {
-                System.out.println("Wrong");
                 terminal.setCursorPosition(wrongLetterX, wrongLetterY);
                 terminal.putCharacter(c);
                 wrongLetterX++;
                 wrongLetterY++;
-                drawMan(terminal, errorCounter);
+
+                draw.drawMan(terminal, errorCounter);
                 errorCounter++;
+                if (errorCounter == 13) {
+                    terminal.setCursorPosition(47, 14);
+                    terminal.putCharacter('D');
+                    terminal.setCursorPosition(48, 14);
+                    terminal.putCharacter('E');
+                    terminal.setCursorPosition(49, 14);
+                    terminal.putCharacter('A');
+                    terminal.setCursorPosition(50, 14);
+                    terminal.putCharacter('D');
+                    terminal.setCursorPosition(51, 14);
+                    terminal.putCharacter('!');
+
+                }
 
                 terminal.flush();
             }
@@ -199,7 +229,7 @@ public class Hangman {
 
         } while (continueReadingInput);
     }
-
+/*
     private static void drawMan(Terminal terminal, int errorCounter) throws IOException {
         switch (errorCounter) {
             case 1:
@@ -251,31 +281,45 @@ public class Hangman {
                 break;
 
             case 6:
-
+                terminal.setCursorPosition(51, 8);
+                terminal.putCharacter('|');
+                terminal.flush();
                 break;
             case 7:
-
+                terminal.setCursorPosition(51, 9);
+                terminal.putCharacter('O');
+                terminal.flush();
                 break;
 
             case 8:
-
+                terminal.setCursorPosition(51, 10);
+                terminal.putCharacter('|');
+                terminal.flush();
                 break;
 
             case 9:
-
+                terminal.setCursorPosition(50, 10);
+                terminal.putCharacter('/');
+                terminal.flush();
                 break;
 
             case 10:
-
+                terminal.setCursorPosition(52, 10);
+                terminal.putCharacter('\\');
+                terminal.flush();
                 break;
 
             case 11:
-
+                terminal.setCursorPosition(50, 11);
+                terminal.putCharacter('/');
+                terminal.flush();
                 break;
 
             case 12:
-
+                terminal.setCursorPosition(52, 11);
+                terminal.putCharacter('\\');
+                terminal.flush();
                 break;
         }
-    }
+    }*/
 }
