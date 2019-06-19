@@ -99,4 +99,35 @@ public class drawMan {
                 break;
         }
     }
+
+    public static void winnerPrint(Terminal terminal) throws IOException {
+        terminal.setCursorPosition(47, 14);
+        terminal.putCharacter('W');
+        terminal.setCursorPosition(48, 14);
+        terminal.putCharacter('I');
+        terminal.setCursorPosition(49, 14);
+        terminal.putCharacter('N');
+        terminal.setCursorPosition(50, 14);
+        terminal.putCharacter('N');
+        terminal.setCursorPosition(51, 14);
+        terminal.putCharacter('E');
+        terminal.setCursorPosition(52, 14);
+        terminal.putCharacter('R');
+        terminal.setCursorPosition(53, 14);
+        terminal.putCharacter('!');
+    }
+
+    public static void loserPrint(Terminal terminal) throws IOException
+    {
+        terminal.setCursorPosition(47, 14);
+        terminal.putCharacter('D');
+        terminal.setCursorPosition(48, 14);
+        terminal.putCharacter('E');
+        terminal.setCursorPosition(49, 14);
+        terminal.putCharacter('A');
+        terminal.setCursorPosition(50, 14);
+        terminal.putCharacter('D');
+        terminal.setCursorPosition(51, 14);
+        terminal.putCharacter('!');
+    }
 }
