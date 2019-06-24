@@ -1,103 +1,23 @@
-/*import com.googlecode.lanterna.input.KeyStroke;
-import com.googlecode.lanterna.input.KeyType;
-import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
-import com.googlecode.lanterna.terminal.Terminal;
-
-import java.util.ArrayList;
-import java.util.Scanner;
-
-public class Hangman {
-    public static void main(String[] args) throws Exception {
-        // Task 4
-        DefaultTerminalFactory terminalFactory = new DefaultTerminalFactory();
-        Terminal terminal = terminalFactory.createTerminal();
-        terminal.setCursorVisible(false);
-        Scanner in = new Scanner(System.in);
-        int hangCounter = 0;
-
-
-        ArrayList<String> words = new ArrayList<String>();
-        words.add("Ambulance");
-        words.add("Saxophone");
-        words.add("Terminated");
-        words.add("Birdseed");
-        words.add("Flute");
-        words.add("Sunglasses");
-        words.add("Factory");
-        words.add("Hangman");
-        words.add("Super");
-        words.add("Pokemon");
-        words.add("Computer");
-        words.add("Dishwasher");
-        words.add("Election");
-        words.add("Scanner");
-        words.add("Analog");
-        words.add("Diner");
-        words.add("Hamburger");
-        words.add("Elephant");
-        words.add("Tiger");
-        words.add("Lion");
-
-        int randomPos = (int) (Math.random() * words.size());
-        String randomWord = words.get(randomPos);
-        System.out.println(randomWord);
-        boolean continueReadingInput = true;
-
-
-        do {
-            KeyStroke keyStroke = null;
-            keyStroke = null;
-            do {
-                for (int i = 0; i < randomWord.length() * 2; i += 2) {
-                    terminal.setCursorPosition(i + 15, 14);
-                    terminal.putCharacter('_');
-                    terminal.setCursorPosition(i + 16, 14);
-                    terminal.putCharacter(' ');
-                }
-                terminal.flush();
-            } while (keyStroke == null);
-
-            KeyType type = keyStroke.getKeyType();
-            Character c = keyStroke.getCharacter();
-
-            if (c == Character.valueOf('q') || c == Character.valueOf('Q')) {
-                continueReadingInput = false;
-                String q = "QUIT";
-                for (int i = 0; i < q.length(); i++) {
-                    terminal.setCursorPosition(38 + i, 12);
-                    Thread.sleep(100);
-                    terminal.putCharacter(q.charAt(i));
-                    Thread.sleep(100);
-                    terminal.flush();
-                }
-                Thread.sleep(200);
-                terminal.close();
-            }
-        }
-        while (continueReadingInput);
-    }
-} */
-
-
 import com.googlecode.lanterna.input.KeyStroke;
 import com.googlecode.lanterna.input.KeyType;
 import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
 import com.googlecode.lanterna.terminal.Terminal;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Hangman {
 
 
-    // Create a terminal.
-
-
     public static void main(String[] args) throws Exception {
+
         DefaultTerminalFactory terminalFactory = new DefaultTerminalFactory();
         Terminal terminal;
         terminal = terminalFactory.createTerminal();
         terminal.setCursorVisible(false);
 
+        Set<Character> usedLetters = new HashSet<Character>();
 
         ArrayList<String> words = new ArrayList<String>();
         words.add("ambulance");
@@ -169,9 +89,19 @@ public class Hangman {
                 }
             }
 
-            if (isRight) {
+            if (usedLetters.contains(c)) {
+                String message = "The letter has already been used";
+                for (int i = 0; i < message.length(); i++) {
+                    terminal.setCursorPosition(i + 15, 20);
+                    terminal.putCharacter(message.charAt(i));
+                }
+            } else if (isRight) {
                 rightCounter++;
-
+                String message = "Correct! Enter a new letter.";
+                for (int i = 0; i < message.length(); i++) {
+                    terminal.setCursorPosition(i + 15, 20);
+                    terminal.putCharacter(message.charAt(i));
+                }
 
                 if (rightCounter == listedWord.length) {
                     draw.winnerPrint(terminal);
@@ -185,6 +115,8 @@ public class Hangman {
 
                 draw.drawMan(terminal, errorCounter);
                 errorCounter++;
+
+
                 if (errorCounter == 13) {
                     draw.loserPrint(terminal);
                 }
@@ -192,7 +124,9 @@ public class Hangman {
                 terminal.flush();
             }
 
-            if (c == Character.valueOf('q') || c == Character.valueOf('Q')) {
+            usedLetters.add(c);
+
+            if (keyStroke.getKeyType().equals(KeyType.Enter)) {
                 continueReadingInput = false;
                 String q = "QUIT";
                 for (int x = 0; x < q.length(); x++) {
