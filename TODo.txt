@@ -1,0 +1,5 @@
+Här kan vi skriva ner vad som behöver göras/kan fixas, t.ex. buggar, funktioner som ska implementeras, design etc.
+
+* Skriva ut ett vinnarmeddelande.
+* Testa varför inte det skriver ut direkt när en bokstav använts (måste tryckas 2ggr)
+* Kolla varför det blir NullPointerException på rad 94.
