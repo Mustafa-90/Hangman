@@ -4,7 +4,6 @@
     <list default="true" id="d6e74a62-1042-4842-bd48-2498044a003a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/TODo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drawMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drawMan.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Hangman.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="53" column="49" lean-forward="true" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+            <state relative-caret-position="17">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#624#635#0" expanded="true" />
@@ -382,8 +381,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Hangman.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="53" column="49" lean-forward="true" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+        <state relative-caret-position="17">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#624#635#0" expanded="true" />

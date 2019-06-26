@@ -1,7 +1,4 @@
 Här kan vi skriva ner vad som behöver göras/kan fixas, t.ex. buggar, funktioner som ska implementeras, design etc.
 
-* Skriva ut ett vinnarmeddelande. 
-* Testa varför inte det skriver ut direkt när en bokstav använts (måste tryckas 2ggr)
-* Kolla varför det blir NullPointerException på rad 94.
 * Försöka fixa att ett ord hämtas direkt från en .txt-fil istället för en Array i javakoden. 
 * Fixa så att användaren inte kan skriva in sifrror eller andra tecken än A-Z.

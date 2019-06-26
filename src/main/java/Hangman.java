@@ -52,6 +52,7 @@ public class Hangman {
         // Get out a random word from the arraylist.
         int randomPos = (int) (Math.random() * words.size());
         String randomWord = words.get(randomPos);
+        randomWord = randomWord.toUpperCase();
         System.out.println(randomWord);
 
         char[] listedWord = randomWord.toCharArray();
@@ -76,6 +77,7 @@ public class Hangman {
 
             KeyType type = keyStroke.getKeyType();
             Character c = keyStroke.getCharacter();
+            c = c.toUpperCase(c);
             terminal.flush();
 
             boolean isRight = false;
@@ -111,9 +113,7 @@ public class Hangman {
                 // Double check if the whole word is found.
                 if (rightCounter == listedWord.length) {
                     draw.winnerPrint(terminal);
-
                     terminal.flush();
-//                    terminal.close();
                 }
             } else {
                 terminal.setCursorPosition(wrongLetterX, wrongLetterY);
@@ -130,14 +130,12 @@ public class Hangman {
                 draw.drawMan(terminal, errorCounter);
                 errorCounter++;
 
-
                 if (errorCounter == 13) {
                     draw.loserPrint(terminal);
                 }
 
                 terminal.flush();
             }
-
             usedLetters.add(c);
 
             if (type.equals(KeyType.Enter)) {
