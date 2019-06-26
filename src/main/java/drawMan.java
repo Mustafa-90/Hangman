@@ -117,8 +117,7 @@ public class drawMan {
         terminal.putCharacter('!');
     }
 
-    public static void loserPrint(Terminal terminal) throws IOException
-    {
+    public static void loserPrint(Terminal terminal) throws IOException {
         terminal.setCursorPosition(47, 14);
         terminal.putCharacter('D');
         terminal.setCursorPosition(48, 14);
@@ -129,5 +128,14 @@ public class drawMan {
         terminal.putCharacter('D');
         terminal.setCursorPosition(51, 14);
         terminal.putCharacter('!');
+    }
+
+    public static void correctLetter(Terminal terminal) throws IOException {
+        String message = "Correct! Enter a new letter.";
+        for (int i = 0; i < message.length(); i++) {
+            terminal.setCursorPosition(i + 15, 20);
+            terminal.putCharacter(message.charAt(i));
+        }
+        terminal.flush();
     }
 }

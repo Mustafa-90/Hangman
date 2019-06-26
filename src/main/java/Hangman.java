@@ -47,12 +47,13 @@ public class Hangman {
         int wrongLetterX = 25;
         int wrongLetterY = 25;
         int errorCounter = 1;
-        int rightCounter = 1;
+        int rightCounter = 0;
 
         // Get out a random word from the arraylist.
         int randomPos = (int) (Math.random() * words.size());
         String randomWord = words.get(randomPos);
         System.out.println(randomWord);
+
         char[] listedWord = randomWord.toCharArray();
 
         for (int i = 0; i < randomWord.length(); i++) {
@@ -78,38 +79,41 @@ public class Hangman {
             terminal.flush();
 
             boolean isRight = false;
+            try {
+                for (int j = 0; j < listedWord.length; j++) {
 
-            for (int j = 0; j < listedWord.length; j++) {
-
-                try {
                     if (c == listedWord[j]) {
                         isRight = true;
                         terminal.setCursorPosition(j + 14, 14);
                         terminal.putCharacter(c);
                         terminal.flush();
+                        rightCounter++;
                     }
-                } catch (NullPointerException e) {
-                    e.printStackTrace();
                 }
+            } catch (NullPointerException e) {
+                e.printStackTrace();
             }
 
+            // Print out if letter has been used.
             if (usedLetters.contains(c)) {
                 String message = "The letter has already been used";
                 for (int i = 0; i < message.length(); i++) {
                     terminal.setCursorPosition(i + 15, 20);
                     terminal.putCharacter(message.charAt(i));
                 }
-            } else if (isRight) {
-                rightCounter++;
-                String message = "Correct! Enter a new letter.";
-                for (int i = 0; i < message.length(); i++) {
-                    terminal.setCursorPosition(i + 15, 20);
-                    terminal.putCharacter(message.charAt(i));
-                }
+                terminal.flush();
+            }
+            // If letter is correct, print out correct and put the character instead of " _ "
+            else if (isRight) {
+                draw.correctLetter(terminal);
+                terminal.flush();
 
+                // Double check if the whole word is found.
                 if (rightCounter == listedWord.length) {
                     draw.winnerPrint(terminal);
-                    terminal.close();
+
+                    terminal.flush();
+//                    terminal.close();
                 }
             } else {
                 terminal.setCursorPosition(wrongLetterX, wrongLetterY);
@@ -136,7 +140,7 @@ public class Hangman {
 
             usedLetters.add(c);
 
-            if (keyStroke.getKeyType().equals(KeyType.Enter)) {
+            if (type.equals(KeyType.Enter)) {
                 continueReadingInput = false;
                 String q = "QUIT";
                 for (int x = 0; x < q.length(); x++) {
