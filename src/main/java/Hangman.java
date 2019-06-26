@@ -81,11 +81,15 @@ public class Hangman {
 
             for (int j = 0; j < listedWord.length; j++) {
 
-                if (c == listedWord[j]) {
-                    isRight = true;
-                    terminal.setCursorPosition(j + 14, 14);
-                    terminal.putCharacter(c);
-                    terminal.flush();
+                try {
+                    if (c == listedWord[j]) {
+                        isRight = true;
+                        terminal.setCursorPosition(j + 14, 14);
+                        terminal.putCharacter(c);
+                        terminal.flush();
+                    }
+                } catch (NullPointerException e) {
+                    e.printStackTrace();
                 }
             }
 
@@ -112,6 +116,12 @@ public class Hangman {
                 terminal.putCharacter(c);
                 wrongLetterX++;
                 wrongLetterY++;
+
+                String message = "Wrong! Enter a new letter.";
+                for (int i = 0; i < message.length(); i++) {
+                    terminal.setCursorPosition(i + 15, 20);
+                    terminal.putCharacter(message.charAt(i));
+                }
 
                 draw.drawMan(terminal, errorCounter);
                 errorCounter++;
