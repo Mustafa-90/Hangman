@@ -62,11 +62,12 @@ public class Hangman {
             for (int j = 0; j < listedWord.length; j++) {
 
                 if (c == listedWord[j]) {
-                    isRight = true;
                     rightCounter++;
+                    isRight = true;
                     terminal.setCursorPosition(j + 14, 14);
                     terminal.putCharacter(c);
                     terminal.flush();
+                    System.out.println(rightCounter);
                 }
             }
 

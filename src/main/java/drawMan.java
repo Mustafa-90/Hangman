@@ -136,78 +136,80 @@ public class drawMan {
         char[] numberArray = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
         terminal.flush();
 
+        int row = 11; int column = 5;
+
         switch (numberOfGuesses) {
             case 0:
-                terminal.setCursorPosition(10, 5);
+                terminal.setCursorPosition(10, column);
                 terminal.putCharacter(numberArray[1]);
-                terminal.setCursorPosition(11, 5);
+                terminal.setCursorPosition(row, column);
                 terminal.putCharacter(numberArray[2]);
                 terminal.flush();
                 break;
             case 1:
-                terminal.setCursorPosition(10, 5);
+                terminal.setCursorPosition(10, column);
                 terminal.putCharacter(numberArray[1]);
-                terminal.setCursorPosition(11, 5);
+                terminal.setCursorPosition(row, column);
                 terminal.putCharacter(numberArray[1]);
                 terminal.flush();
                 break;
             case 2:
-                terminal.setCursorPosition(10, 5);
+                terminal.setCursorPosition(10, column);
                 terminal.putCharacter(numberArray[1]);
-                terminal.setCursorPosition(11, 5);
+                terminal.setCursorPosition(row, column);
                 terminal.putCharacter(numberArray[0]);
                 terminal.flush();
                 break;
             case 3:
-                terminal.setCursorPosition(10, 5);
+                terminal.setCursorPosition(10, column);
                 terminal.putCharacter(' ');
-                terminal.setCursorPosition(11, 5);
+                terminal.setCursorPosition(row, column);
                 terminal.putCharacter(numberArray[9]);
                 terminal.flush();
                 break;
             case 4:
-                terminal.setCursorPosition(11, 5);
+                terminal.setCursorPosition(row, column);
                 terminal.putCharacter(numberArray[8]);
                 terminal.flush();
                 break;
             case 5:
-                terminal.setCursorPosition(11, 5);
+                terminal.setCursorPosition(row, column);
                 terminal.putCharacter(numberArray[7]);
                 terminal.flush();
                 break;
             case 6:
-                terminal.setCursorPosition(11, 5);
+                terminal.setCursorPosition(row, column);
                 terminal.putCharacter(numberArray[6]);
                 terminal.flush();
                 break;
             case 7:
-                terminal.setCursorPosition(11, 5);
+                terminal.setCursorPosition(row, column);
                 terminal.putCharacter(numberArray[5]);
                 terminal.flush();
                 break;
             case 8:
-                terminal.setCursorPosition(11, 5);
+                terminal.setCursorPosition(row, column);
                 terminal.putCharacter(numberArray[4]);
                 terminal.flush();
                 break;
             case 9:
-                terminal.setCursorPosition(11, 5);
+                terminal.setCursorPosition(row, column);
                 terminal.putCharacter(numberArray[3]);
                 terminal.flush();
                 break;
             case 10:
-                terminal.setCursorPosition(11, 5);
+                terminal.setCursorPosition(row, column);
                 terminal.putCharacter(numberArray[2]);
                 terminal.flush();
                 break;
             case 11:
-                terminal.setCursorPosition(11, 5);
+                terminal.setCursorPosition(row, column);
                 terminal.putCharacter(numberArray[1]);
                 terminal.flush();
                 break;
             case 12:
                 terminal.setForegroundColor(TextColor.ANSI.RED);
-                terminal.setCursorPosition(11, 5);
+                terminal.setCursorPosition(row, column);
                 terminal.putCharacter(numberArray[0]);
                 terminal.flush();
                 break;
