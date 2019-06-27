@@ -5,6 +5,7 @@ import com.googlecode.lanterna.terminal.Terminal;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Hangman {
@@ -90,12 +91,12 @@ public class Hangman {
             }
 
             if (usedLetters.contains(c)) {
-                String message = "The letter has already been used";
+                String message = "The letter has already been used.";
                 for (int i = 0; i < message.length(); i++) {
                     terminal.setCursorPosition(i + 15, 20);
                     terminal.putCharacter(message.charAt(i));
+                    terminal.flush();
                 }
-                terminal.flush();
 
             } else if (isRight) {
                 rightCounter++;
@@ -103,6 +104,10 @@ public class Hangman {
                 for (int i = 0; i < message.length(); i++) {
                     terminal.setCursorPosition(i + 15, 20);
                     terminal.putCharacter(message.charAt(i));
+                }
+                for (int i = 26; i < 32; i++) {
+                    terminal.setCursorPosition(i + 17, 20);
+                    terminal.putCharacter(' ');
                     terminal.flush();
                 }
 
@@ -117,6 +122,7 @@ public class Hangman {
                 wrongLetterY++;
 
                 draw.drawMan(terminal, errorCounter);
+                drawMan.guessCounter(terminal, errorCounter);
                 errorCounter++;
                 terminal.flush();
 
@@ -124,12 +130,13 @@ public class Hangman {
                     draw.loserPrint(terminal);
                     terminal.flush();
                 }
-
             }
 
             usedLetters.add(c);
 
             if (keyStroke.getKeyType().equals(KeyType.Enter)) {
+                terminal.setCursorPosition(11, 5);
+                terminal.putCharacter(' ');
                 continueReadingInput = false;
                 String q = "QUIT";
                 for (int x = 0; x < q.length(); x++) {
