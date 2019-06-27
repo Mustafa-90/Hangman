@@ -3,10 +3,9 @@ import com.googlecode.lanterna.input.KeyType;
 import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
 import com.googlecode.lanterna.terminal.Terminal;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.*;
 
 public class Hangman {
 
@@ -20,27 +19,7 @@ public class Hangman {
 
         Set<Character> usedLetters = new HashSet<Character>();
 
-        ArrayList<String> words = new ArrayList<String>();
-        words.add("ambulance");
-        words.add("saxophone");
-        words.add("terminated");
-        words.add("birdseed");
-        words.add("flute");
-        words.add("sunglasses");
-        words.add("factory");
-        words.add("hangman");
-        words.add("super");
-        words.add("pokemon");
-        words.add("computer");
-        words.add("dishwasher");
-        words.add("election");
-        words.add("scanner");
-        words.add("analog");
-        words.add("diner");
-        words.add("hamburger");
-        words.add("elephant");
-        words.add("tiger");
-        words.add("lion");
+        List<String> words = getWordsFromFile();
 
         drawMan draw = new drawMan();
 
@@ -59,8 +38,8 @@ public class Hangman {
         for (int i = 0; i < randomWord.length(); i++) {
             terminal.setCursorPosition(i + 14, 14);
             terminal.putCharacter('_');
+            terminal.flush();
         }
-        terminal.flush();
 
         // Quitting the program.
         boolean continueReadingInput = true;
@@ -71,7 +50,7 @@ public class Hangman {
             do {
                 Thread.sleep(5); // might throw InterruptedException
                 keyStroke = terminal.pollInput();
-
+                terminal.flush();
             } while (keyStroke == null);
 
             KeyType type = keyStroke.getKeyType();
@@ -104,6 +83,7 @@ public class Hangman {
                 for (int i = 0; i < message.length(); i++) {
                     terminal.setCursorPosition(i + 15, 20);
                     terminal.putCharacter(message.charAt(i));
+                    terminal.flush();
                 }
                 for (int i = 26; i < 32; i++) {
                     terminal.setCursorPosition(i + 17, 20);
@@ -151,5 +131,24 @@ public class Hangman {
             }
 
         } while (continueReadingInput);
+    }
+
+    private static List<String> getWordsFromFile() {
+        File file = new File("wordsDB.txt");
+        Scanner scan = null;
+        List<String> words;
+        String wordsFromFile = "";
+        try {
+            scan = new Scanner(file);
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found.");
+            e.printStackTrace();
+        }
+        while (scan.hasNext()) {
+            wordsFromFile = wordsFromFile.concat(scan.nextLine() + "\n").trim();
+        }
+        String[] arrOfWords = wordsFromFile.split(",");
+
+        return words = Arrays.asList(arrOfWords);
     }
 }
