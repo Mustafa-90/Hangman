@@ -63,6 +63,7 @@ public class Hangman {
 
                 if (c == listedWord[j]) {
                     isRight = true;
+                    rightCounter++;
                     terminal.setCursorPosition(j + 14, 14);
                     terminal.putCharacter(c);
                     terminal.flush();
@@ -78,7 +79,6 @@ public class Hangman {
                 }
 
             } else if (isRight) {
-                rightCounter++;
                 String message = "Correct! Enter a new letter.";
                 for (int i = 0; i < message.length(); i++) {
                     terminal.setCursorPosition(i + 15, 20);
@@ -90,7 +90,6 @@ public class Hangman {
                     terminal.putCharacter(' ');
                     terminal.flush();
                 }
-
                 if (rightCounter == listedWord.length) {
                     draw.winnerPrint(terminal);
                     terminal.flush();
@@ -111,7 +110,6 @@ public class Hangman {
                     terminal.flush();
                 }
             }
-
             usedLetters.add(c);
 
             if (keyStroke.getKeyType().equals(KeyType.Enter)) {

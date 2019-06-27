@@ -102,6 +102,7 @@ public class drawMan {
     }
 
     public static void winnerPrint(Terminal terminal) throws IOException {
+        terminal.setForegroundColor(TextColor.ANSI.GREEN);
         terminal.setCursorPosition(47, 14);
         terminal.putCharacter('W');
         terminal.setCursorPosition(48, 14);
