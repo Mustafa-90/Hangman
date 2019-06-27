@@ -95,12 +95,15 @@ public class Hangman {
                     terminal.setCursorPosition(i + 15, 20);
                     terminal.putCharacter(message.charAt(i));
                 }
+                terminal.flush();
+
             } else if (isRight) {
                 rightCounter++;
                 String message = "Correct! Enter a new letter.";
                 for (int i = 0; i < message.length(); i++) {
                     terminal.setCursorPosition(i + 15, 20);
                     terminal.putCharacter(message.charAt(i));
+                    terminal.flush();
                 }
 
                 if (rightCounter == listedWord.length) {
@@ -115,13 +118,13 @@ public class Hangman {
 
                 draw.drawMan(terminal, errorCounter);
                 errorCounter++;
-
+                terminal.flush();
 
                 if (errorCounter == 13) {
                     draw.loserPrint(terminal);
+                    terminal.flush();
                 }
 
-                terminal.flush();
             }
 
             usedLetters.add(c);
