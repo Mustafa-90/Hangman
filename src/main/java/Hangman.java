@@ -47,7 +47,7 @@ public class Hangman {
         int wrongLetterX = 25;
         int wrongLetterY = 25;
         int errorCounter = 1;
-        int rightCounter = 1;
+        int rightCounter = 0;
 
         // Get out a random word from the arraylist.
         int randomPos = (int) (Math.random() * words.size());
@@ -105,7 +105,7 @@ public class Hangman {
 
                 if (rightCounter == listedWord.length) {
                     draw.winnerPrint(terminal);
-                    terminal.close();
+                    terminal.flush();
                 }
             } else {
                 terminal.setCursorPosition(wrongLetterX, wrongLetterY);
