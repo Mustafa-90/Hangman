@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e72a89b4-019d-4d0f-ac26-fc6b3c82d6e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drawMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drawMan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Hangman.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Hangman.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/drawMan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/drawMan.class" afterDir="false" />
-    </list>
+    <list default="true" id="e72a89b4-019d-4d0f-ac26-fc6b3c82d6e7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,24 +12,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Hangman.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="111" column="42" lean-forward="true" selection-start-line="111" selection-start-column="42" selection-end-line="111" selection-end-column="42" />
+            <state relative-caret-position="195">
+              <caret line="152" column="47" lean-forward="true" selection-start-line="152" selection-start-column="47" selection-end-line="152" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#710#721#0" expanded="true" />
+                <element signature="method#getWordsFromFile#0;class#Hangman#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/drawMan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="196" column="35" selection-start-line="196" selection-start-column="35" selection-end-line="196" selection-end-column="35" />
+            <state relative-caret-position="306">
+              <caret line="220" column="79" selection-start-line="220" selection-start-column="79" selection-end-line="220" selection-end-column="79" />
               <folding>
                 <element signature="method#drawMan#0;class#drawMan#0" />
                 <element signature="method#generateBoard#0;class#drawMan#0" />
@@ -46,6 +41,9 @@
                 <element signature="e#253#3211#0" />
                 <element signature="method#winnerPrint#0;class#drawMan#0" />
                 <element signature="method#loserPrint#0;class#drawMan#0" />
+                <element signature="method#correctLetter#0;class#drawMan#0" />
+                <element signature="method#wrongLetter#0;class#drawMan#0" />
+                <element signature="method#alreadyUsedLetter#0;class#drawMan#0" />
               </folding>
             </state>
           </provider>
@@ -110,7 +108,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561720690805" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561721002252" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -148,12 +146,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560502833850</updated>
-      <workItem from="1561562341709" duration="27664000" />
+      <workItem from="1561562341709" duration="28013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2250000" />
+    <option name="totallyTimeSpent" value="2599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -170,7 +168,7 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29459903" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29459903" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46644846" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -294,21 +292,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Hangman.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="111" column="42" lean-forward="true" selection-start-line="111" selection-start-column="42" selection-end-line="111" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#710#721#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/drawMan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="196" column="35" selection-start-line="196" selection-start-column="35" selection-end-line="196" selection-end-column="35" />
+        <state relative-caret-position="306">
+          <caret line="220" column="79" selection-start-line="220" selection-start-column="79" selection-end-line="220" selection-end-column="79" />
           <folding>
             <element signature="method#drawMan#0;class#drawMan#0" />
             <element signature="method#generateBoard#0;class#drawMan#0" />
@@ -319,6 +306,21 @@
             <element signature="e#253#3211#0" />
             <element signature="method#winnerPrint#0;class#drawMan#0" />
             <element signature="method#loserPrint#0;class#drawMan#0" />
+            <element signature="method#correctLetter#0;class#drawMan#0" />
+            <element signature="method#wrongLetter#0;class#drawMan#0" />
+            <element signature="method#alreadyUsedLetter#0;class#drawMan#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Hangman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="152" column="47" lean-forward="true" selection-start-line="152" selection-start-column="47" selection-end-line="152" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#710#721#0" expanded="true" />
+            <element signature="method#getWordsFromFile#0;class#Hangman#0" />
           </folding>
         </state>
       </provider>
