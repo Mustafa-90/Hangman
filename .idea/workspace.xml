@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e74a62-1042-4842-bd48-2498044a003a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/TODo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drawMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drawMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Hangman.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Hangman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/drawMan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/drawMan.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Hangman.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="1774">
+              <caret line="175" column="43" lean-forward="true" selection-start-line="175" selection-start-column="43" selection-end-line="175" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#624#635#0" expanded="true" />
@@ -38,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/drawMan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
+            <state relative-caret-position="210">
+              <caret line="135" column="58" lean-forward="true" selection-start-line="135" selection-start-column="58" selection-end-line="135" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,6 +133,11 @@
             </path>
             <path>
               <item name="LanternaLab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LanternaLab" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LanternaLab" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -147,7 +155,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
@@ -191,9 +199,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VantandePart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="VantandePart" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Hangman" />
+        <item itemvalue="Application.VantandePart" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MainTest" />
         <item itemvalue="Application.Task8to10" />
@@ -282,6 +297,18 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout-to-restore>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Hangman.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointLogExpression">
       <expression>
@@ -369,10 +396,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2164.33727/AnslutandePart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2164.33974/VantandePart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2164.45317/VantandePart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="138" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2164.49624/AnslutandePart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="123" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/drawMan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
+        <state relative-caret-position="210">
+          <caret line="135" column="58" lean-forward="true" selection-start-line="135" selection-start-column="58" selection-end-line="135" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -381,8 +448,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Hangman.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="1774">
+          <caret line="175" column="43" lean-forward="true" selection-start-line="175" selection-start-column="43" selection-end-line="175" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#624#635#0" expanded="true" />

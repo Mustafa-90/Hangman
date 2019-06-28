@@ -1,3 +1,4 @@
+import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.terminal.Terminal;
 
 import java.io.IOException;
@@ -101,6 +102,7 @@ public class drawMan {
     }
 
     public static void winnerPrint(Terminal terminal) throws IOException {
+        terminal.setForegroundColor(TextColor.ANSI.GREEN);
         terminal.setCursorPosition(47, 14);
         terminal.putCharacter('W');
         terminal.setCursorPosition(48, 14);
@@ -115,9 +117,12 @@ public class drawMan {
         terminal.putCharacter('R');
         terminal.setCursorPosition(53, 14);
         terminal.putCharacter('!');
+        terminal.setForegroundColor(TextColor.ANSI.WHITE);
+
     }
 
     public static void loserPrint(Terminal terminal) throws IOException {
+        terminal.setForegroundColor(TextColor.ANSI.RED);
         terminal.setCursorPosition(47, 14);
         terminal.putCharacter('D');
         terminal.setCursorPosition(48, 14);
@@ -128,13 +133,21 @@ public class drawMan {
         terminal.putCharacter('D');
         terminal.setCursorPosition(51, 14);
         terminal.putCharacter('!');
+        terminal.setForegroundColor(TextColor.ANSI.WHITE);
     }
 
     public static void correctLetter(Terminal terminal) throws IOException {
         String message = "Correct! Enter a new letter.";
         for (int i = 0; i < message.length(); i++) {
+            terminal.setForegroundColor(TextColor.ANSI.GREEN);
             terminal.setCursorPosition(i + 15, 20);
             terminal.putCharacter(message.charAt(i));
+            terminal.setForegroundColor(TextColor.ANSI.WHITE);
+
+            for (int j = 26; j < 32; j++) {
+                terminal.setCursorPosition(j + 17, 20);
+                terminal.putCharacter(' ');
+            }
         }
         terminal.flush();
     }
