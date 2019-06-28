@@ -133,7 +133,16 @@ public class Hangman {
                     // Double check if the whole word is found.
                     if (rightCounter == listedWord.length) {
                         draw.winnerPrint(terminal);
+                        usedLetters.clear();
+                        errorCounter = 1;
+                        rightCounter = 0;
+                        wrongLetterX = 25;
+                        wrongLetterY = 25;
                         terminal.flush();
+
+                        Thread.sleep(2000);
+                        terminal.clearScreen();
+                        continueReadingInput = false;
                     }
                 }
 
@@ -166,7 +175,7 @@ public class Hangman {
                     if (errorCounter == 13) {
                         draw.loserPrint(terminal);
                         for (int x = 0; x < randomWord.length(); x++) {
-                            terminal.setCursorPosition(x+14, 14);
+                            terminal.setCursorPosition(x + 14, 14);
                             Thread.sleep(100);
                             terminal.putCharacter(randomWord.charAt(x));
                             Thread.sleep(100);
