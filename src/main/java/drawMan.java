@@ -8,6 +8,27 @@ public class drawMan {
     public drawMan() {
     }
 
+    public static void generateBoard(Terminal terminal, String randomWord) throws IOException {
+        String welcome = "Hangman";
+        for (int i = 0; i < welcome.length(); i++) {
+            terminal.setCursorPosition(i + 30, 2);
+            terminal.putCharacter(welcome.charAt(i));
+            terminal.flush();
+        }
+        String guesses = "Guesses left:";
+        for (int i = 0; i < guesses.length(); i++) {
+            terminal.setCursorPosition(i + 1, 5);
+            terminal.putCharacter(guesses.charAt(i));
+            terminal.flush();
+        }
+
+        for (int i = 0; i < randomWord.length(); i++) {
+            terminal.setCursorPosition(i + 14, 14);
+            terminal.putCharacter('_');
+            terminal.flush();
+        }
+    }
+
     public static void drawMan(Terminal terminal, int errorCounter) throws IOException {
         switch (errorCounter) {
             case 1:
@@ -15,6 +36,10 @@ public class drawMan {
                 terminal.putCharacter('/');
                 terminal.setCursorPosition(46, 11);
                 terminal.putCharacter('/');
+                terminal.setCursorPosition(15, 5);
+                terminal.putCharacter('1');
+                terminal.setCursorPosition(16, 5);
+                terminal.putCharacter('1');
                 terminal.flush();
                 break;
 
@@ -25,6 +50,10 @@ public class drawMan {
                 terminal.putCharacter('\\');
                 terminal.setCursorPosition(49, 12);
                 terminal.putCharacter('\\');
+                terminal.setCursorPosition(15, 5);
+                terminal.putCharacter('1');
+                terminal.setCursorPosition(16, 5);
+                terminal.putCharacter('0');
                 terminal.flush();
                 break;
 
@@ -35,6 +64,10 @@ public class drawMan {
                 terminal.putCharacter('|');
                 terminal.setCursorPosition(47, 8);
                 terminal.putCharacter('|');
+                terminal.setCursorPosition(15, 5);
+                terminal.putCharacter(' ');
+                terminal.setCursorPosition(16, 5);
+                terminal.putCharacter('9');
                 terminal.flush();
                 break;
 
@@ -49,53 +82,71 @@ public class drawMan {
                 terminal.putCharacter('=');
                 terminal.setCursorPosition(51, 7);
                 terminal.putCharacter('=');
+                terminal.setCursorPosition(16, 5);
+                terminal.putCharacter('8');
                 terminal.flush();
                 break;
 
             case 5:
                 terminal.setCursorPosition(48, 8);
                 terminal.putCharacter('/');
+                terminal.setCursorPosition(16, 5);
+                terminal.putCharacter('7');
                 terminal.flush();
                 break;
 
             case 6:
                 terminal.setCursorPosition(51, 8);
                 terminal.putCharacter('|');
+                terminal.setCursorPosition(16, 5);
+                terminal.putCharacter('6');
                 terminal.flush();
                 break;
             case 7:
                 terminal.setCursorPosition(51, 9);
                 terminal.putCharacter('O');
+                terminal.setCursorPosition(16, 5);
+                terminal.putCharacter('5');
                 terminal.flush();
                 break;
 
             case 8:
                 terminal.setCursorPosition(51, 10);
                 terminal.putCharacter('|');
+                terminal.setCursorPosition(16, 5);
+                terminal.putCharacter('4');
                 terminal.flush();
                 break;
 
             case 9:
                 terminal.setCursorPosition(50, 10);
                 terminal.putCharacter('/');
+                terminal.setCursorPosition(16, 5);
+                terminal.putCharacter('3');
                 terminal.flush();
                 break;
 
             case 10:
                 terminal.setCursorPosition(52, 10);
                 terminal.putCharacter('\\');
+                terminal.setCursorPosition(16, 5);
+                terminal.putCharacter('2');
                 terminal.flush();
                 break;
 
             case 11:
                 terminal.setCursorPosition(50, 11);
                 terminal.putCharacter('/');
+                terminal.setCursorPosition(16, 5);
+                terminal.putCharacter('1');
                 terminal.flush();
                 break;
 
             case 12:
                 terminal.setCursorPosition(52, 11);
                 terminal.putCharacter('\\');
+                terminal.setCursorPosition(16, 5);
+                terminal.putCharacter('0');
                 terminal.flush();
                 break;
         }
@@ -117,9 +168,11 @@ public class drawMan {
         terminal.putCharacter('R');
         terminal.setCursorPosition(53, 14);
         terminal.putCharacter('!');
+        terminal.setForegroundColor(TextColor.ANSI.WHITE);
     }
 
     public static void loserPrint(Terminal terminal) throws IOException {
+        terminal.setForegroundColor(TextColor.ANSI.RED);
         terminal.setCursorPosition(47, 14);
         terminal.putCharacter('D');
         terminal.setCursorPosition(48, 14);
@@ -130,92 +183,7 @@ public class drawMan {
         terminal.putCharacter('D');
         terminal.setCursorPosition(51, 14);
         terminal.putCharacter('!');
+        terminal.setForegroundColor(TextColor.ANSI.WHITE);
     }
 
-    public static void guessCounter(Terminal terminal, int numberOfGuesses) throws IOException {
-        char[] numberArray = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
-        terminal.flush();
-
-        int row = 11; int column = 5;
-
-        switch (numberOfGuesses) {
-            case 0:
-                terminal.setCursorPosition(10, column);
-                terminal.putCharacter(numberArray[1]);
-                terminal.setCursorPosition(row, column);
-                terminal.putCharacter(numberArray[2]);
-                terminal.flush();
-                break;
-            case 1:
-                terminal.setCursorPosition(10, column);
-                terminal.putCharacter(numberArray[1]);
-                terminal.setCursorPosition(row, column);
-                terminal.putCharacter(numberArray[1]);
-                terminal.flush();
-                break;
-            case 2:
-                terminal.setCursorPosition(10, column);
-                terminal.putCharacter(numberArray[1]);
-                terminal.setCursorPosition(row, column);
-                terminal.putCharacter(numberArray[0]);
-                terminal.flush();
-                break;
-            case 3:
-                terminal.setCursorPosition(10, column);
-                terminal.putCharacter(' ');
-                terminal.setCursorPosition(row, column);
-                terminal.putCharacter(numberArray[9]);
-                terminal.flush();
-                break;
-            case 4:
-                terminal.setCursorPosition(row, column);
-                terminal.putCharacter(numberArray[8]);
-                terminal.flush();
-                break;
-            case 5:
-                terminal.setCursorPosition(row, column);
-                terminal.putCharacter(numberArray[7]);
-                terminal.flush();
-                break;
-            case 6:
-                terminal.setCursorPosition(row, column);
-                terminal.putCharacter(numberArray[6]);
-                terminal.flush();
-                break;
-            case 7:
-                terminal.setCursorPosition(row, column);
-                terminal.putCharacter(numberArray[5]);
-                terminal.flush();
-                break;
-            case 8:
-                terminal.setCursorPosition(row, column);
-                terminal.putCharacter(numberArray[4]);
-                terminal.flush();
-                break;
-            case 9:
-                terminal.setCursorPosition(row, column);
-                terminal.putCharacter(numberArray[3]);
-                terminal.flush();
-                break;
-            case 10:
-                terminal.setCursorPosition(row, column);
-                terminal.putCharacter(numberArray[2]);
-                terminal.flush();
-                break;
-            case 11:
-                terminal.setCursorPosition(row, column);
-                terminal.putCharacter(numberArray[1]);
-                terminal.flush();
-                break;
-            case 12:
-                terminal.setForegroundColor(TextColor.ANSI.RED);
-                terminal.setCursorPosition(row, column);
-                terminal.putCharacter(numberArray[0]);
-                terminal.flush();
-                break;
-            default:
-                terminal.flush();
-                break;
-        }
-    }
 }

@@ -1,3 +1,4 @@
+import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.input.KeyStroke;
 import com.googlecode.lanterna.input.KeyType;
 import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
@@ -35,11 +36,7 @@ public class Hangman {
         System.out.println(randomWord);
         char[] listedWord = randomWord.toCharArray();
 
-        for (int i = 0; i < randomWord.length(); i++) {
-            terminal.setCursorPosition(i + 14, 14);
-            terminal.putCharacter('_');
-            terminal.flush();
-        }
+        drawMan.generateBoard(terminal, randomWord);
 
         // Quitting the program.
         boolean continueReadingInput = true;
@@ -57,16 +54,30 @@ public class Hangman {
             Character c = keyStroke.getCharacter();
             terminal.flush();
 
+            if (keyStroke.getKeyType().equals(KeyType.Enter)) {
+                continueReadingInput = false;
+                String q = "QUIT";
+                for (int x = 0; x < q.length(); x++) {
+                    terminal.setCursorPosition(30 + x, 7);
+                    Thread.sleep(100);
+                    terminal.putCharacter(q.charAt(x));
+                    Thread.sleep(100);
+                    terminal.flush();
+                }
+                Thread.sleep(200);
+                terminal.close();
+            }
+
             boolean isRight = false;
 
             for (int j = 0; j < listedWord.length; j++) {
 
-                if (c == listedWord[j]) {
-                    rightCounter++;
+                if (c == listedWord[j] && !usedLetters.contains(c)) {
                     isRight = true;
                     terminal.setCursorPosition(j + 14, 14);
                     terminal.putCharacter(c);
                     terminal.flush();
+                    rightCounter++;
                     System.out.println(rightCounter);
                 }
             }
@@ -102,32 +113,17 @@ public class Hangman {
                 wrongLetterY++;
 
                 draw.drawMan(terminal, errorCounter);
-                drawMan.guessCounter(terminal, errorCounter);
+//                drawMan.guessCounter(terminal, errorCounter);
                 errorCounter++;
                 terminal.flush();
 
                 if (errorCounter == 13) {
                     draw.loserPrint(terminal);
+                    continueReadingInput=false;
                     terminal.flush();
                 }
             }
             usedLetters.add(c);
-
-            if (keyStroke.getKeyType().equals(KeyType.Enter)) {
-                terminal.setCursorPosition(11, 5);
-                terminal.putCharacter(' ');
-                continueReadingInput = false;
-                String q = "QUIT";
-                for (int x = 0; x < q.length(); x++) {
-                    terminal.setCursorPosition(38 + x, 12);
-                    Thread.sleep(100);
-                    terminal.putCharacter(q.charAt(x));
-                    Thread.sleep(100);
-                    terminal.flush();
-                }
-                Thread.sleep(200);
-                terminal.close();
-            }
 
         } while (continueReadingInput);
     }
