@@ -4,9 +4,9 @@ import com.googlecode.lanterna.input.KeyType;
 import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
 import com.googlecode.lanterna.terminal.Terminal;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.*;
 
 public class Hangman {
 
@@ -22,31 +22,11 @@ public class Hangman {
 
         Set<Character> usedLetters = new HashSet<Character>();
 
-        ArrayList<String> words = new ArrayList<String>();
-        words.add("ambulance");
-        words.add("saxophone");
-        words.add("terminated");
-        words.add("birdseed");
-        words.add("flute");
-        words.add("sunglasses");
-        words.add("factory");
-        words.add("hangman");
-        words.add("super");
-        words.add("pokemon");
-        words.add("computer");
-        words.add("dishwasher");
-        words.add("election");
-        words.add("scanner");
-        words.add("analog");
-        words.add("diner");
-        words.add("hamburger");
-        words.add("elephant");
-        words.add("tiger");
-        words.add("lion");
+        List<String> words = getWordsFromFile();
 
         drawMan draw = new drawMan();
 
-        // Variables for the positioning of the wrong guesses.
+        // Variables for the positioning of the wrong letters, errors- and right guesses.
         int wrongLetterX = 25;
         int wrongLetterY = 25;
         int errorCounter = 1;
@@ -61,13 +41,10 @@ public class Hangman {
 
             char[] listedWord = randomWord.toCharArray();
 
-            for (int i = 0; i < randomWord.length(); i++) {
-                terminal.setCursorPosition(i + 14, 14);
-                terminal.putCharacter('_');
-            }
-            terminal.flush();
+            // Generate board
+            drawMan.generateBoard(terminal, randomWord);
 
-            // Quitting the program.
+            // Quitting the program when put to false.
             boolean continueReadingInput = true;
             do {
                 KeyStroke keyStroke = null;
@@ -117,12 +94,7 @@ public class Hangman {
 
                 // Print out if letter has been used.
                 if (usedLetters.contains(c)) {
-                    String message = "The letter has already been used";
-                    for (int i = 0; i < message.length(); i++) {
-                        terminal.setCursorPosition(i + 15, 20);
-                        terminal.putCharacter(message.charAt(i));
-                    }
-                    terminal.flush();
+                    draw.alreadyUsedLetter(terminal);
                 }
                 // If letter is correct, print out correct and put the character instead of " _ "
                 else if (isRight) {
@@ -153,18 +125,7 @@ public class Hangman {
                     wrongLetterX++;
                     wrongLetterY++;
 
-                    String message = "Wrong! Enter a new letter.";
-                    for (int i = 0; i < message.length(); i++) {
-                        terminal.setForegroundColor(TextColor.ANSI.RED);
-                        terminal.setCursorPosition(i + 15, 20);
-                        terminal.putCharacter(message.charAt(i));
-                        terminal.setForegroundColor(TextColor.ANSI.WHITE);
-                    }
-
-                    for (int j = 26; j < 32; j++) {
-                        terminal.setCursorPosition(j + 15, 20);
-                        terminal.putCharacter(' ');
-                    }
+                    draw.wrongLetter(terminal);
 
                     // Method to print out the man.
                     draw.drawMan(terminal, errorCounter);
@@ -194,8 +155,28 @@ public class Hangman {
                     }
                     terminal.flush();
                 }
+
                 usedLetters.add(c);
+
             } while (continueReadingInput);
         }
+    }
+    private static List<String> getWordsFromFile () {
+        File file = new File("wordsDB.txt");
+        Scanner scan = null;
+        List<String> words;
+        String wordsFromFile = "";
+        try {
+            scan = new Scanner(file);
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found.");
+            e.printStackTrace();
+        }
+        while (scan.hasNext()) {
+            wordsFromFile = wordsFromFile.concat(scan.nextLine() + "\n").trim();
+        }
+        String[] arrOfWords = wordsFromFile.split(",");
+
+        return words = Arrays.asList(arrOfWords);
     }
 }

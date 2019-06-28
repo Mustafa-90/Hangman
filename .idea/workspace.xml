@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="d6e74a62-1042-4842-bd48-2498044a003a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+=======
+    <list default="true" id="e72a89b4-019d-4d0f-ac26-fc6b3c82d6e7" name="Default Changelist" comment="" />
+>>>>>>> 588fc4bc304e79277a8ba9cfc9a1b414f6ae5f63
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="LanternaLab" />
@@ -23,12 +24,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Hangman.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-77">
               <caret line="71" selection-start-line="71" selection-end-line="71" />
+=======
+            <state relative-caret-position="195">
+              <caret line="152" column="47" lean-forward="true" selection-start-line="152" selection-start-column="47" selection-end-line="152" selection-end-column="47" />
+>>>>>>> 588fc4bc304e79277a8ba9cfc9a1b414f6ae5f63
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#624#635#0" expanded="true" />
-                <element signature="e#687#695#0" expanded="true" />
+                <element signature="e#710#721#0" expanded="true" />
+                <element signature="method#getWordsFromFile#0;class#Hangman#0" />
               </folding>
             </state>
           </provider>
@@ -37,10 +43,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/drawMan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="82" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="306">
+              <caret line="220" column="79" selection-start-line="220" selection-start-column="79" selection-end-line="220" selection-end-column="79" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#drawMan#0;class#drawMan#0" />
+                <element signature="method#generateBoard#0;class#drawMan#0" />
+                <element signature="e#272#416#1" />
+                <element signature="e#510#653#1" />
+                <element signature="e#709#842#1" />
+                <element signature="method#drawMan#1;class#drawMan#0" />
+                <element signature="e#253#3211#0" />
+                <element signature="method#winnerPrint#0;class#drawMan#0" />
+                <element signature="method#loserPrint#0;class#drawMan#0" />
+                <element signature="method#correctLetter#0;class#drawMan#0" />
+                <element signature="method#wrongLetter#0;class#drawMan#0" />
+                <element signature="method#alreadyUsedLetter#0;class#drawMan#0" />
               </folding>
             </state>
           </provider>
@@ -48,20 +65,10 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>' '</find>
+      <find>draw</find>
     </findStrings>
-    <dirStrings>
-      <dir>C:\Users\Mustafa\IdeaProjects\LanternaLab\src\main</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -70,6 +77,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Snake.java" />
@@ -77,11 +85,15 @@
         <option value="$PROJECT_DIR$/src/main/java/snakePosition.java" />
         <option value="$PROJECT_DIR$/src/main/java/SnakePosition.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainTest.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/Hangman.java" />
+>>>>>>> 588fc4bc304e79277a8ba9cfc9a1b414f6ae5f63
         <option value="$PROJECT_DIR$/src/main/java/drawMan.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hangman.java" />
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -95,64 +107,49 @@
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
+=======
+>>>>>>> 588fc4bc304e79277a8ba9cfc9a1b414f6ae5f63
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="LanternaLab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LanternaLab" type="462c0819:PsiDirectoryNode" />
+              <item name="Hangman2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hangman2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LanternaLab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LanternaLab" type="462c0819:PsiDirectoryNode" />
+              <item name="Hangman2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hangman2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LanternaLab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LanternaLab" type="462c0819:PsiDirectoryNode" />
+              <item name="Hangman2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hangman2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="LanternaLab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LanternaLab" type="462c0819:PsiDirectoryNode" />
+              <item name="Hangman2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hangman2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LanternaLab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LanternaLab" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LanternaLab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="LanternaLab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.googlecode.lanterna:lanterna:3.0.1" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561721002252" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -166,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Hangman">
+  <component name="RunManager">
     <configuration name="Hangman" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hangman" />
       <module name="LanternaLab" />
@@ -174,40 +171,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="LanternaLab" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <module name="LanternaLab" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task8to10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task8to10" />
-      <module name="LanternaLab" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VantandePart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="VantandePart" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Hangman" />
-        <item itemvalue="Application.VantandePart" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MainTest" />
-        <item itemvalue="Application.Task8to10" />
       </list>
     </recent_temporary>
   </component>
@@ -221,40 +187,43 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560502833850</updated>
+      <workItem from="1561562341709" duration="28013000" />
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2599000" />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+=======
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+>>>>>>> 588fc4bc304e79277a8ba9cfc9a1b414f6ae5f63
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989011" visible="true" weight="0.21744967" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989011" visible="true" weight="0.21785174" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50109893" side_tool="true" weight="0.27761194" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29575402" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4670571" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29459903" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46644846" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.329429" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3235725" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32242227" />
+      <window_info anchor="right" auto_hide="true" x="0" y="0" width="295" height="544" id="Documentation" type="SLIDING" weight="0.32980332" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -265,72 +234,41 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989011" weight="0.23154363" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989011" visible="true" weight="0.21785174" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50109893" side_tool="true" weight="0.27761194" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30088496" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4674221" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3249052" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.29459903" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4670571" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.329429" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329429" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32242227" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout-to-restore>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Hangman.java</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="breakpointLogExpression">
-      <expression>
-        <expression-string>KeyType type = keyStroke.getKeyType();
-        Character c = keyStroke.getCharacter();</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="387" column="18" selection-start-line="387" selection-start-column="18" selection-end-line="387" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Random.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Snake.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="534" column="16" selection-start-line="534" selection-start-column="16" selection-end-line="534" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/ArrayList.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -384,72 +322,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="64" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="64" />
+        <state relative-caret-position="142">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2164.33727/AnslutandePart.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2164.33974/VantandePart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2164.45317/VantandePart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="138" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2164.49624/AnslutandePart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="123" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/drawMan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="306">
+          <caret line="220" column="79" selection-start-line="220" selection-start-column="79" selection-end-line="220" selection-end-column="79" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#drawMan#0;class#drawMan#0" />
+            <element signature="method#generateBoard#0;class#drawMan#0" />
+            <element signature="e#272#416#1" />
+            <element signature="e#510#653#1" />
+            <element signature="e#709#842#1" />
+            <element signature="method#drawMan#1;class#drawMan#0" />
+            <element signature="e#253#3211#0" />
+            <element signature="method#winnerPrint#0;class#drawMan#0" />
+            <element signature="method#loserPrint#0;class#drawMan#0" />
+            <element signature="method#correctLetter#0;class#drawMan#0" />
+            <element signature="method#wrongLetter#0;class#drawMan#0" />
+            <element signature="method#alreadyUsedLetter#0;class#drawMan#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Hangman.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-77">
           <caret line="71" selection-start-line="71" selection-end-line="71" />
+=======
+        <state relative-caret-position="195">
+          <caret line="152" column="47" lean-forward="true" selection-start-line="152" selection-start-column="47" selection-end-line="152" selection-end-column="47" />
+>>>>>>> 588fc4bc304e79277a8ba9cfc9a1b414f6ae5f63
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#624#635#0" expanded="true" />
-            <element signature="e#687#695#0" expanded="true" />
+            <element signature="e#710#721#0" expanded="true" />
+            <element signature="method#getWordsFromFile#0;class#Hangman#0" />
           </folding>
         </state>
       </provider>
