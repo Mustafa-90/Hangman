@@ -1,5 +1,12 @@
+<<<<<<< HEAD
+Här kan vi skriva ner vad som behöver göras/kan fixas, t.ex. buggar, funktioner som ska implementeras, design etc.
+
+* Försöka fixa att ett ord hämtas direkt från en .txt-fil istället för en Array i javakoden. 
+* Fixa så att användaren inte kan skriva in sifrror eller andra tecken än A-Z.
+=======
 Här kan vi skriva ner vad som behöver göras/kan fixas, t.ex. buggar, funktioner som ska implementeras, design etc.
 
 * Skriva ut ett vinnarmeddelande.
 * Testa varför inte det skriver ut direkt när en bokstav använts (måste tryckas 2ggr)
 * Kolla varför det blir NullPointerException på rad 94.
+>>>>>>> 9c5debfe0562bcaa9d33b604f64d51e39bd956e2

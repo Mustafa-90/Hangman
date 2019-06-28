@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e74a62-1042-4842-bd48-2498044a003a" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/drawMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drawMan.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Hangman.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Hangman.class" afterDir="false" />
+>>>>>>> 60a145b26b260655e92eb5e07c0466b6bd381068
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,6 +27,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -53,6 +60,17 @@
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#624#635#0" expanded="true" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Hangman.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#624#635#0" expanded="true" />
+                <element signature="e#687#695#0" expanded="true" />
+>>>>>>> 60a145b26b260655e92eb5e07c0466b6bd381068
               </folding>
             </state>
           </provider>
@@ -61,8 +79,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/drawMan.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="102">
               <caret line="10" column="94" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
+=======
+            <state relative-caret-position="399">
+              <caret line="82" selection-start-line="82" selection-end-line="82" />
+>>>>>>> 60a145b26b260655e92eb5e07c0466b6bd381068
               <folding>
                 <element signature="method#drawMan#0;class#drawMan#0" />
                 <element signature="method#generateBoard#0;class#drawMan#0" />
@@ -161,6 +184,23 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="LanternaLab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LanternaLab" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LanternaLab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="LanternaLab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.googlecode.lanterna:lanterna:3.0.1" type="70bed36:NamedLibraryElementNode" />
+            </path>
+>>>>>>> 60a145b26b260655e92eb5e07c0466b6bd381068
           </expand>
           <select />
         </subPane>
@@ -175,10 +215,14 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561715531274" />
     <property name="full.screen.before.presentation.mode" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Grupp4Lanterna" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+=======
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+>>>>>>> 60a145b26b260655e92eb5e07c0466b6bd381068
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
@@ -222,9 +266,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VantandePart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="VantandePart" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Hangman" />
+        <item itemvalue="Application.VantandePart" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MainTest" />
         <item itemvalue="Application.Task8to10" />
@@ -261,7 +312,11 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989011" visible="true" weight="0.21785174" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989011" visible="true" weight="0.21744967" />
+>>>>>>> 60a145b26b260655e92eb5e07c0466b6bd381068
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -324,8 +379,22 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout-to-restore>
   </component>
+<<<<<<< HEAD
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+=======
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Hangman.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+>>>>>>> 60a145b26b260655e92eb5e07c0466b6bd381068
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointLogExpression">
@@ -402,10 +471,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2164.33727/AnslutandePart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2164.33974/VantandePart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2164.45317/VantandePart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="138" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2164.49624/AnslutandePart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="123" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/drawMan.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="102">
           <caret line="10" column="94" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
+=======
+        <state relative-caret-position="399">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+>>>>>>> 60a145b26b260655e92eb5e07c0466b6bd381068
           <folding>
             <element signature="method#drawMan#0;class#drawMan#0" />
             <element signature="method#generateBoard#0;class#drawMan#0" />
@@ -422,11 +536,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Hangman.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="16">
           <caret line="130" column="4" selection-start-line="130" selection-start-column="4" selection-end-line="147" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#624#635#0" expanded="true" />
+=======
+        <state relative-caret-position="93">
+          <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#624#635#0" expanded="true" />
+            <element signature="e#687#695#0" expanded="true" />
+>>>>>>> 60a145b26b260655e92eb5e07c0466b6bd381068
           </folding>
         </state>
       </provider>

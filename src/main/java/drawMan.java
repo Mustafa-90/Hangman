@@ -186,4 +186,19 @@ public class drawMan {
         terminal.setForegroundColor(TextColor.ANSI.WHITE);
     }
 
+    public static void correctLetter(Terminal terminal) throws IOException {
+        String message = "Correct! Enter a new letter.";
+        for (int i = 0; i < message.length(); i++) {
+            terminal.setForegroundColor(TextColor.ANSI.GREEN);
+            terminal.setCursorPosition(i + 15, 20);
+            terminal.putCharacter(message.charAt(i));
+            terminal.setForegroundColor(TextColor.ANSI.WHITE);
+
+            for (int j = 26; j < 32; j++) {
+                terminal.setCursorPosition(j + 17, 20);
+                terminal.putCharacter(' ');
+            }
+        }
+        terminal.flush();
+    }
 }
