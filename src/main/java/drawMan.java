@@ -15,7 +15,7 @@ public class drawMan {
             terminal.putCharacter(welcome.charAt(i));
             terminal.flush();
         }
-        String guesses = "Guesses left:";
+        String guesses = "Guesses left: 12";
         for (int i = 0; i < guesses.length(); i++) {
             terminal.setCursorPosition(i + 1, 5);
             terminal.putCharacter(guesses.charAt(i));
@@ -194,10 +194,37 @@ public class drawMan {
             terminal.putCharacter(message.charAt(i));
             terminal.setForegroundColor(TextColor.ANSI.WHITE);
 
-            for (int j = 26; j < 32; j++) {
+            for (int j = 26; j < 37; j++) {
                 terminal.setCursorPosition(j + 17, 20);
                 terminal.putCharacter(' ');
             }
+        }
+        terminal.flush();
+    }
+
+    public static void wrongLetter(Terminal terminal) throws IOException {
+        String message = "Wrong! Enter a new letter.";
+        for (int i = 0; i < message.length(); i++) {
+            terminal.setForegroundColor(TextColor.ANSI.RED);
+            terminal.setCursorPosition(i + 15, 20);
+            terminal.putCharacter(message.charAt(i));
+            terminal.setForegroundColor(TextColor.ANSI.WHITE);
+        }
+
+        for (int j = 26; j < 39; j++) {
+            terminal.setCursorPosition(j + 15, 20);
+            terminal.putCharacter(' ');
+        }
+        terminal.flush();
+    }
+
+    public static void alreadyUsedLetter(Terminal terminal) throws IOException {
+        String message = "Oops! The letter has already been used.";
+        for (int i = 0; i < message.length(); i++) {
+            terminal.setForegroundColor(TextColor.ANSI.CYAN);
+            terminal.setCursorPosition(i + 15, 20);
+            terminal.putCharacter(message.charAt(i));
+            terminal.setForegroundColor(TextColor.ANSI.WHITE);
         }
         terminal.flush();
     }

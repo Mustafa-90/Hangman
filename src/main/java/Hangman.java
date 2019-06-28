@@ -26,7 +26,7 @@ public class Hangman {
 
         drawMan draw = new drawMan();
 
-        // Variables for the positioning of the wrong guesses.
+        // Variables for the positioning of the wrong letters, errors- and right guesses.
         int wrongLetterX = 25;
         int wrongLetterY = 25;
         int errorCounter = 1;
@@ -41,9 +41,10 @@ public class Hangman {
 
             char[] listedWord = randomWord.toCharArray();
 
+            // Generate board
             drawMan.generateBoard(terminal, randomWord);
 
-            // Quitting the program.
+            // Quitting the program when put to false.
             boolean continueReadingInput = true;
 
             do {
@@ -94,12 +95,7 @@ public class Hangman {
 
                 // Print out if letter has been used.
                 if (usedLetters.contains(c)) {
-                    String message = "The letter has already been used";
-                    for (int i = 0; i < message.length(); i++) {
-                        terminal.setCursorPosition(i + 15, 20);
-                        terminal.putCharacter(message.charAt(i));
-                    }
-                    terminal.flush();
+                    draw.alreadyUsedLetter(terminal);
                 }
                 // If letter is correct, print out correct and put the character instead of " _ "
                 else if (isRight) {
@@ -130,18 +126,7 @@ public class Hangman {
                     wrongLetterX++;
                     wrongLetterY++;
 
-                    String message = "Wrong! Enter a new letter.";
-                    for (int i = 0; i < message.length(); i++) {
-                        terminal.setForegroundColor(TextColor.ANSI.RED);
-                        terminal.setCursorPosition(i + 15, 20);
-                        terminal.putCharacter(message.charAt(i));
-                        terminal.setForegroundColor(TextColor.ANSI.WHITE);
-                    }
-
-                    for (int j = 26; j < 32; j++) {
-                        terminal.setCursorPosition(j + 15, 20);
-                        terminal.putCharacter(' ');
-                    }
+                    draw.wrongLetter(terminal);
 
                     // Method to print out the man.
                     draw.drawMan(terminal, errorCounter);
