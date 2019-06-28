@@ -41,19 +41,19 @@ public class Hangman {
 
             char[] listedWord = randomWord.toCharArray();
 
-        drawMan.generateBoard(terminal, randomWord);
+            drawMan.generateBoard(terminal, randomWord);
 
             // Quitting the program.
             boolean continueReadingInput = true;
 
-        do {
-            KeyStroke keyStroke = null;
-            keyStroke = null;
             do {
-                Thread.sleep(5); // might throw InterruptedException
-                keyStroke = terminal.pollInput();
+                KeyStroke keyStroke = null;
+                keyStroke = null;
+                do {
+                    Thread.sleep(5); // might throw InterruptedException
+                    keyStroke = terminal.pollInput();
 
-            } while (keyStroke == null);
+                } while (keyStroke == null);
 
                 KeyType type = keyStroke.getKeyType();
                 Character c = keyStroke.getCharacter();
@@ -171,13 +171,13 @@ public class Hangman {
                     }
                     terminal.flush();
                 }
-            }
-            usedLetters.add(c);
 
-        } while (continueReadingInput);
+                usedLetters.add(c);
+
+            } while (continueReadingInput);
+        }
     }
-
-    private static List<String> getWordsFromFile() {
+    private static List<String> getWordsFromFile () {
         File file = new File("wordsDB.txt");
         Scanner scan = null;
         List<String> words;
