@@ -69,7 +69,6 @@ public class Hangman {
 
             // Quitting the program.
             boolean continueReadingInput = true;
-
             do {
                 KeyStroke keyStroke = null;
                 keyStroke = null;
